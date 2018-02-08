@@ -1,12 +1,12 @@
 # Answers
-Contributors: slushman
-Donate link: https://www.slushman.com
-Tags: faq, questions, frequently
-Requires at least: 3.0.1
-Tested up to: 4.9.4
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- Contributors: slushman
+- Donate link: https://www.slushman.com
+- Tags: faq, questions, frequently
+- Requires at least: 3.0.1
+- Tested up to: 4.9.4
+- Stable tag: 1.0.0
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A simple frequently asked questions plugin with blocks.
 
@@ -16,6 +16,7 @@ A simple frequently asked questions plugin with blocks.
 
 A simple frequently asked questions plugin with blocks.
 
+Uses the create-guten-block project.
 
 
 ## Installation
