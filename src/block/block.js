@@ -8,6 +8,7 @@
 //  Import CSS.
 import './style.scss';
 import './editor.scss';
+import Answers from './get-answers';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -34,28 +35,15 @@ registerBlockType( 'answers/block-answers', {
         __( 'Frequently Asked Questions' ),
 		__( 'FAQs' )
 	],
-	edit: function( props ) {
+	edit: props => {
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the backend.</p>
-				<p>
-					CGB BLOCK: <code>answers</code> is a new Gutenberg block
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
-			</div>
+			<Answers
+				className={props.className}
+			/>
 		);
 	},
-	save: function( props ) {
-		return (
-			// rendered in PHP callback.
-			null
-		);
+	save: props => {
+		// rendered in PHP callback.
+		return null
 	},
 } );

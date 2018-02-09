@@ -39,6 +39,7 @@ function answers_init_classes() {
 	$classes = array();
 
 	$classes[] = new Classes\Blocks();
+	$classes[] = new Classes\CPTAnswer();
 
 	if ( empty( $classes ) ) { return; }
 
